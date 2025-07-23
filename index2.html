@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="style2.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+    <nav id="navbar">
+        <ul id="navbar-list">
+            <li class="navbar-item"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="navbar-item"><a href="#Abt" class="nav-link">About us</a></li>
+            <li class="navbar-item"><a href="#best-sellers" class="nav-link">Best sellers</a></li>
+            <li class="navbar-item"><a href="" class="nav-link">Menu</a></li>
+        </ul>
+        <ul id="btn-list">
+            <button class="btn nav-btn">Contact Us</button>
+            <button class="btn nav-btn">Order Now</button>
+        </ul>
+    
+    </nav>
+    
+    <hr>
+
+    <main class="main-content">
+        <div class="left-section">
+            <h1>Get in touch</h1>
+            <p class="subtitle">We are here for you! How can we help?</p>
+            <div class="form-container">
+                <h2>Drop us a line</h2>
+                <form autocomplete="off" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Your name</label>
+                            <input type="text" name="name" id="name" required placeholder="Please enter your name"
+                                autocomplete="off">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">subject</label>
+                            <select name="subject" id="subject" required autocomplete="off">
+                                <option value="" selected>Just saying hi</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="support">Support</option>
+                                <option value="feedback">Feedback</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required placeholder="Please enter your email"
+                            autocomplete="off">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" required placeholder="Enter your message here"
+                            autocomplete="off"></textarea>
+                    </div>
+                    <button class="btn-f" type="submit">Send message</button>
+                </form>
+            </div>
+        </div>
+        <div class="right-section">
+            <h2>Or check out these:</h2>
+            <div class="resource-card">
+                <div class="resource-icon">
+                    <i class="fab fa-instagram"></i>
+                </div>
+                <div class="resource-content">
+                    <h3>Send us a direct message on Instagram</h3>
+                    <p>Follow us on Instagram and get more updates</p>
+                </div>
+            </div>
+            <div class="resource-card">
+                <div class="resource-icon">
+                    <i class="fab fa-facebook"></i>
+                </div>
+                <div class="resource-content">
+                    <h3>Join us on Facebook</h3>
+                    <p>Come and join our Facebook group to connect with other Iraqi food lovers like you</p>
+                </div>
+            </div>
+            <div class="resource-card">
+                <div class="resource-icon">
+                    <i class="fab fa-twitter"></i>
+                </div>
+                <div class="resource-content">
+                    <h3>Follow us on Twitter</h3>
+                    <p>Stay updated with our latest new additions to our menu</p>
+                </div>
+            </div>
+            <div class="resource-card">
+                <div class="resource-icon">
+                    <i class="fab fa-youtube"></i>
+                </div>
+                <div class="resource-content">
+                    <h3>Watch our videos on Youtube</h3>
+                    <p>Learn more about Iraqi cuisine</p>
+                </div>
+            </div>
+    </main>
+
+    <div id="success-message" class="hidden">
+        Message sent successfully!
+    </div>
+
+
+    <footer id="footer">
+        <div id="ft-cont">
+            <ul>
+                <li class="ft-item">Buisness Affairs</li>
+                <li class="ft-item">Privacy Policy</li>
+                <li class="ft-item">Terms of Service</li>
+                <li class="ft-item">Help center</li>
+            </ul>
+            <span>Copyright © Iraqi Delights. All rights reserved.</span>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
